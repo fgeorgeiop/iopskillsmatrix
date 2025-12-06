@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I/O & People Analytics - Domains & Roles Summary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #000000;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            color: #666666;
+            margin-bottom: 3px;
+        }
+
+        .author {
+            font-size: 11px;
+            color: #666666;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 9px;
+        }
+
+        thead {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        th {
+            padding: 6px 3px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #000000;
+            font-size: 8px;
+        }
+
+        th.domain-header {
+            text-align: left;
+            width: 200px;
+            font-size: 9px;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        td {
+            padding: 5px 3px;
+            border: 1px solid #dddddd;
+            text-align: center;
+            font-size: 8px;
+        }
+
+        td.domain-name {
+            text-align: left;
+            font-weight: 600;
+            color: #000000;
+            padding-left: 8px;
+        }
+
+        .level-3 {
+            background-color: #000000;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .level-2 {
+            background-color: #666666;
+            color: #ffffff;
+        }
+
+        .level-1 {
+            background-color: #cccccc;
+            color: #000000;
+        }
+
+        .level-0 {
+            background-color: #f5f5f5;
+            color: #999999;
+        }
+
+        .legend {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+        }
+
+        .legend h3 {
+            font-size: 11px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .legend-items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            font-size: 8px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .legend-box {
+            width: 20px;
+            height: 12px;
+            border: 1px solid #000000;
+        }
+
+        .roles-legend {
+            margin-top: 10px;
+            font-size: 8px;
+            line-height: 1.4;
+        }
+
+        .roles-legend h3 {
+            font-size: 10px;
+            margin-bottom: 6px;
+        }
+
+        .role-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+        }
+
+        .role-item {
+            padding: 2px 0;
+        }
+
+        .role-abbr {
+            font-weight: bold;
+            display: inline-block;
+            min-width: 25px;
+        }
+
+        @media print {
+            @page {
+                size: landscape;
+                margin: 0.5in;
+            }
+
+            body {
+                padding: 0;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            table {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>I/O & People Analytics Skills Matrix 2025</h1>
+            <div class="subtitle">Domains & Roles Summary</div>
+            <div class="author">Felix George, Ph.D.</div>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="domain-header">Domain</th>
+                    <th>TA</th>
+                    <th>OD</th>
+                    <th>LD</th>
+                    <th>EX</th>
+                    <th>EL</th>
+                    <th>BI</th>
+                    <th>DS</th>
+                    <th>EF</th>
+                    <th>AI</th>
+                    <th>PS</th>
+                    <th>HF</th>
+                    <th>EG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="domain-name">Foundations & Domain</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-3">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Research Design & Evidence</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Statistics & Modeling</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Psychometrics & Assessment</td>
+                    <td class="level-3">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-0">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-3">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Talent Systems</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Org Development, Culture & EX</td>
+                    <td class="level-0">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-0">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Workforce Planning & Org Design</td>
+                    <td class="level-0">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-0">●</td>
+                    <td class="level-0">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Business Intelligence & Report</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-3">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Advanced People Analytics</td>
+                    <td class="level-0">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">People AI / Machine Learning</td>
+                    <td class="level-1">●</td>
+                    <td class="level-0">●</td>
+                    <td class="level-0">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-3">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Data Engineering & Tech</td>
+                    <td class="level-0">●</td>
+                    <td class="level-0">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-3">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Ethics, Risk & Governance</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Business & Communication</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-2">●</td>
+                    <td class="level-3">●</td>
+                </tr>
+                <tr>
+                    <td class="domain-name">Work Design</td>
+                    <td class="level-0">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-0">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-0">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-1">●</td>
+                    <td class="level-0">●</td>
+                    <td class="level-3">●</td>
+                    <td class="level-1">●</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="legend">
+            <h3>Proficiency Levels</h3>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="legend-box level-3"></div>
+                    <span><strong>3 - Expert:</strong> Can lead, teach, and innovate</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box level-2"></div>
+                    <span><strong>2 - Important:</strong> Can apply independently</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box level-1"></div>
+                    <span><strong>1 - Aware:</strong> Basic understanding</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box level-0"></div>
+                    <span><strong>0 - Not Required:</strong> Not typically needed</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="roles-legend">
+            <h3>Role Definitions (12 Specialized Roles)</h3>
+            <div class="role-list">
+                <div class="role-item"><span class="role-abbr">TA:</span> Talent Assessment & Selection / Psychometrics</div>
+                <div class="role-item"><span class="role-abbr">OD:</span> Org Development, Culture & Change</div>
+                <div class="role-item"><span class="role-abbr">LD:</span> Learning & Development (evidence-based)</div>
+                <div class="role-item"><span class="role-abbr">EX:</span> Employee Experience, Engagement & Well-being</div>
+                <div class="role-item"><span class="role-abbr">EL:</span> Employee Listening (surveys, feedback, voice)</div>
+                <div class="role-item"><span class="role-abbr">BI:</span> Business Intelligence and Analyst</div>
+                <div class="role-item"><span class="role-abbr">DS:</span> People Research Scientist (advanced stats, experimentation)</div>
+                <div class="role-item"><span class="role-abbr">EF:</span> Org. Effectiveness and Org Design</div>
+                <div class="role-item"><span class="role-abbr">AI:</span> People AI / HRML Engineer (ML, NLP, automation)</div>
+                <div class="role-item"><span class="role-abbr">PS:</span> People Strategy / HRBP (strategic, business-aligned)</div>
+                <div class="role-item"><span class="role-abbr">HF:</span> Work Design</div>
+                <div class="role-item"><span class="role-abbr">EG:</span> Ethics, Risk & Governance (people data + AI)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
